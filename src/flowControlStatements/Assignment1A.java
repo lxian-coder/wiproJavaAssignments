@@ -1,4 +1,4 @@
-package FlowControlStatements;
+package flowControlStatements;
 
 import java.util.ArrayList;
 import java.util.List;

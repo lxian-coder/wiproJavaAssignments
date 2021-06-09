@@ -1,6 +1,5 @@
-package FlowControlStatements;
+package flowControlStatements;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 /**

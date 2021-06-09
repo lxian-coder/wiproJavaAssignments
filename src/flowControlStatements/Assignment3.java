@@ -1,4 +1,4 @@
-package FlowControlStatements;
+package flowControlStatements;
 
 /**
  * Darcy Xian  8/6/21  11:25 am      wiproJavaAssigments

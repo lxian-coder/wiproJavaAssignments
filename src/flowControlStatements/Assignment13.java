@@ -1,6 +1,4 @@
-package FlowControlStatements;
-
-import java.util.Scanner;
+package flowControlStatements;
 
 /**
  * Darcy Xian  9/6/21  10:13 am      wiproJavaAssigments
