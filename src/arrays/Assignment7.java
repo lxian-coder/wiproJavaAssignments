@@ -18,33 +18,37 @@ public class Assignment7 {
             num[i] = Integer.parseInt(arr[i]);
         }
         List<Integer> dupli = new ArrayList<>();
-        for(int i =0; i<num.length; i++){
+        for(int i =0; i<num.length-1; i++){
             int temp = num[i];
-            for(int a =0; a<num.length;a++){
-                if(a != i){
+            for(int a = i+1; a<num.length;a++){
+                boolean recorded = false;
+                for ( int b : dupli) {
+                    if(a == b) recorded = true;
+                }
+                if(a != i && recorded == false){
                     if(temp == num[a]){
-                        dupli.add(i);
+                        dupli.add(a);
                     }
                 }
             }
         }
+
         int modifyLength = dupli.size();
         int num2[] = new int[num.length-modifyLength];
         int index =0;
         for(int i = 0;i<num.length; i++) {
-            boolean delete = false;
-            for(int d =0; d<dupli.size();d++){
-                if(i == dupli.get(d));
-                delete = true;
+            boolean shouldDelete = false;
+            for(int b : dupli) {
+                if(i == b) shouldDelete = true;
             }
-            if(!delete){
+            if(shouldDelete == false){
                 num2[index] = num[i];
                 index++;
             }
         }
       for (int i =0; i<num2.length;i++){
-          System.out.println(num2[i]);
+          System.out.print(num2[i]+" ");
       }
 
-    }
+   }
 }
